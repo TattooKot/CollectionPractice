@@ -1,4 +1,4 @@
-package com.company.first;
+package main.java.com.tattookot.javacore;
 
 /*
 Необходимо реализовать анализатор текста, который принимает строку и проверяет, что у неё закрыты все открытые скобки
@@ -8,7 +8,7 @@ package com.company.first;
 “[(){}” - не корректно
  */
 
-public class Task2 {
+public class StringAnalyzer {
     public static void main(String[] args) {
 
         System.out.println(analyzer("[({})]"));
