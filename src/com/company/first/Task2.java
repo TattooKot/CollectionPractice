@@ -1,4 +1,4 @@
-package com.company;
+package com.company.first;
 
 /*
 Необходимо реализовать анализатор текста, который принимает строку и проверяет, что у неё закрыты все открытые скобки
@@ -17,6 +17,9 @@ public class Task2 {
     }
 
     public static boolean analyzer(String s) {
+        if(s == null)
+            throw  new IllegalArgumentException();
+
         if(s.contains("[") && !s.contains("]"))
             return false;
 
